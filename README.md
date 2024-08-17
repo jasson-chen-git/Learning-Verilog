@@ -1,4 +1,4 @@
-This repo serves as a simple tracker for my Verilog/SystemVerilog progress.
+This repo serves as a tracker for my Verilog/SystemVerilog progress.
 
 Some of the earlier projects, labeled Lab## (Lab02 was not a design lab therefore not included) are school projects that were originally written in VHDL.
 However, they have been redefined in Verilog/SystemVerilog with my own techniques that I learned throughout the course.
