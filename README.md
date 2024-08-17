@@ -16,7 +16,8 @@ Each project will aim to utilize as many of the features of Verilog/SystemVerilo
                     xs3_bcd_cond
                     xs3_bcd_TB
           
-          Lab04 ->  
+          Lab04 ->  xs3_bcd_lut
+                    xs3_bcd_TB
           
           Lab05 ->  
           
