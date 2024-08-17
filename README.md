@@ -5,6 +5,6 @@ They have been redefined in Verilog/SystemVerilog with my own techniques that I 
 These early projects may include heavy use of comments to keep records of different coding styles or different approaches to the assignment.
 They also serve as reminders and tutorials to reference later on.
 
-Each project will aim to utilize as many of the features of V/SV to help make learning more effective.
+Each project will aim to utilize as many of the features of Verilog/SystemVerilog to help make learning more effective.
 
 Thanks for viewing! 
