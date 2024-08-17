@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+Info: Error with 00
+
+Time: 0 ps  Iteration: 1  Process: /half_adder_TB/Always51_3  Scope: half_adder_TB  File: C:/Users/Jason/Documents/Vivado/Verilog/Lab01/Lab01.srcs/sources_1/new/half_adder_TB.sv Line: 55
+Applying: a = 0, b = 0
+Info: Error with 01
+
+Time: 10 ns  Iteration: 1  Process: /half_adder_TB/Always51_3  Scope: half_adder_TB  File: C:/Users/Jason/Documents/Vivado/Verilog/Lab01/Lab01.srcs/sources_1/new/half_adder_TB.sv Line: 55
+Applying: a = 0, b = 1
+Info: Error with 10
+
+Time: 20 ns  Iteration: 1  Process: /half_adder_TB/Always51_3  Scope: half_adder_TB  File: C:/Users/Jason/Documents/Vivado/Verilog/Lab01/Lab01.srcs/sources_1/new/half_adder_TB.sv Line: 55
+Applying: a = 1, b = 0
+OK!
+
+Applying: a = 1, b = 1
+Done
+
+$finish called at time : 40 ns : File "C:/Users/Jason/Documents/Vivado/Verilog/Lab01/Lab01.srcs/sources_1/new/half_adder_TB.sv" Line 44
