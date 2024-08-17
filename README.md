@@ -7,36 +7,36 @@ They also serve as reminders and tutorials to reference later on.
 
 Each project will aim to utilize as many of the features of Verilog/SystemVerilog to help make learning more effective.
 
-Lab01 ->  half_adder
-          half_adder_TB
-
-Lab02 ->  N/A
-
-Lab03 ->  xs3_bcd_case
-          xs3_bcd_cond
-          xs3_bcd_TB
-
-Lab04 ->  
-
-Lab05 ->  
-
-Lab06 ->  
-
-Lab07 ->  
-
-Lab08 ->  
-
-Lab09a ->  
-
-Lab09b ->  
-
-Lab10a ->  
-
-Lab10b ->  
-
-Lab11a ->  
-
-Lab11b ->  
+          Lab01 ->  half_adder
+                    half_adder_TB
+          
+          Lab02 ->  N/A
+          
+          Lab03 ->  xs3_bcd_case
+                    xs3_bcd_cond
+                    xs3_bcd_TB
+          
+          Lab04 ->  
+          
+          Lab05 ->  
+          
+          Lab06 ->  
+          
+          Lab07 ->  
+          
+          Lab08 ->  
+          
+          Lab09a ->  
+          
+          Lab09b ->  
+          
+          Lab10a ->  
+          
+          Lab10b ->  
+          
+          Lab11a ->  
+          
+          Lab11b ->  
 
 
 
