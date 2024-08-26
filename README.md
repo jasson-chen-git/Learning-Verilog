@@ -7,7 +7,5 @@ They also serve as reminders and tutorials to reference later on.
 
 Each project will aim to utilize as many of the features of Verilog/SystemVerilog to help make learning more effective.
 
-
-
-
+😄😄😄
 Thanks for viewing! 
