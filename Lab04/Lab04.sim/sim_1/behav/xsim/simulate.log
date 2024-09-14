@@ -1,12 +1,31 @@
 Time resolution is 1 ps
-Error: Test failed for pqrs = 0000
-Time: 10 ns  Iteration: 0  Process: /xs3_bcd_TB/Initial30_0  Scope: xs3_bcd_TB.Block31_1  File: C:/Users/Jason/Documents/Vivado/Verilog/Lab04/Lab04.srcs/sources_1/new/xs3_bcd_TB.sv Line: 34
-Error: Test failed for pqrs = 0001
-Time: 20 ns  Iteration: 0  Process: /xs3_bcd_TB/Initial30_0  Scope: xs3_bcd_TB.Block31_1  File: C:/Users/Jason/Documents/Vivado/Verilog/Lab04/Lab04.srcs/sources_1/new/xs3_bcd_TB.sv Line: 34
-Error: Test failed for pqrs = 0010
-Time: 30 ns  Iteration: 0  Process: /xs3_bcd_TB/Initial30_0  Scope: xs3_bcd_TB.Block31_1  File: C:/Users/Jason/Documents/Vivado/Verilog/Lab04/Lab04.srcs/sources_1/new/xs3_bcd_TB.sv Line: 34
-Error: Test failed for pqrs = 1101
-Time: 140 ns  Iteration: 0  Process: /xs3_bcd_TB/Initial30_0  Scope: xs3_bcd_TB.Block31_1  File: C:/Users/Jason/Documents/Vivado/Verilog/Lab04/Lab04.srcs/sources_1/new/xs3_bcd_TB.sv Line: 34
-Error: Test failed for pqrs = 1110
-Time: 150 ns  Iteration: 0  Process: /xs3_bcd_TB/Initial30_0  Scope: xs3_bcd_TB.Block31_1  File: C:/Users/Jason/Documents/Vivado/Verilog/Lab04/Lab04.srcs/sources_1/new/xs3_bcd_TB.sv Line: 34
-$finish called at time : 150 ns : File "C:/Users/Jason/Documents/Vivado/Verilog/Lab04/Lab04.srcs/sources_1/new/xs3_bcd_TB.sv" Line 36
+
+
+Start of Stimulus
+
+
+Success!
+
+Success!
+
+Success!
+
+Success!
+
+Success!
+
+Success!
+
+Success!
+
+Success!
+
+Success!
+
+Success!
+
+
+End of Stimulus
+
+
+$finish called at time : 160 ns : File "C:/Users/Jason/Documents/Vivado/Verilog/Lab04/Lab04.srcs/sources_1/new/xs3_bcd_TB.sv" Line 46

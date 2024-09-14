@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer:            Jason Chen
 // 
-// Create Date: 08/17/2024 03:51:11 PM
-// Design Name: 
-// Module Name: xs3_bcd_TB
+// Create Date:         08/17/2024 03:51:11 PM
+// Design Name:         XS3 Code to Binary Code Converter Testbench
+// Module Name:         xs3_bcd_TB
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -22,18 +22,27 @@
 
 module xs3_bcd_TB();
 
+    //  create test signals
     logic [3:0] pqrs, dcba;
     
+    //  instantiate UUT - module, name, ports
     xs3_bcd_lut uut(pqrs, dcba);
     
-    
+    //  begin stimulus
     initial begin
-        for(int i = 0; i < 'd15; i++) begin
+        $display("\n\nStart of Stimulus\n\n");
+        
+        for(int i = 0; i <= 15; i++) begin
             pqrs = i; #10;
-            assert(dcba == pqrs - 2'b11)
-            else $error("Test failed for pqrs = %b", pqrs);     //  will report errors for dcba = xxxx
-        end
-        $finish;
-    end
             
+            if(i > 2 && i < 13) begin
+                assert(dcba == pqrs - 2'b11) $display("Success!");
+                else $error("Failed for PQRS = %b", pqrs);          //  will report errors for dcba = xxxx
+                
+                $display();
+            end
+        end
+        $display("\n\End of Stimulus\n\n");
+        $finish;
+    end       
 endmodule
