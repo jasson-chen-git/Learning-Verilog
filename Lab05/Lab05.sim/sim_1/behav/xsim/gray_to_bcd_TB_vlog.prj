@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Lab05.srcs/sources_1/new/gray_to_bcd_scalar.sv" \
+"../../../../Lab05.srcs/sources_1/new/gray_to_bcd_vector.sv" \
+"../../../../Lab05.srcs/sources_1/new/gray_to_bcd_TB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
