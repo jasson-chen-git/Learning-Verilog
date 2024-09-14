@@ -1,0 +1,53 @@
+Time resolution is 1 ps
+
+
+Start of Stimulus
+
+
+PQRS = 0000
+
+PQRS = 0001
+
+PQRS = 0010
+
+PQRS = 0011
+
+
+PQRS = 0100
+
+
+PQRS = 0101
+
+
+PQRS = 0110
+
+
+PQRS = 0111
+
+
+PQRS = 1000
+
+
+PQRS = 1001
+
+
+PQRS = 1010
+
+
+PQRS = 1011
+
+
+PQRS = 1100
+
+
+PQRS = 1101
+
+PQRS = 1110
+
+PQRS = 1111
+
+
+End of Stimulus
+
+
+$finish called at time : 160 ns : File "C:/Users/Jason/Documents/Vivado/Verilog/Lab03/Lab03.srcs/sources_1/new/xs3_bcd_TB.sv" Line 66

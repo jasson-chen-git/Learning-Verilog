@@ -21,42 +21,48 @@
 
 
 module xs3_bcd_TB();
-
+    
+    //  create test signals
     reg p, q, r, s;
     wire d0, c0, b0, a0;
     wire d1, c1, b1, a1;
     
+    //  create vector test signals
     reg [3:0] pqrs;         //  4-bit register
     reg [3:0] case_dcba;    //  4-bit wire
     reg [3:0] cond_dcba;
     
-    
-    //  instantiate UUT
+    //  instantiate UUT - module, name, ports
     xs3_bcd_case uut0(p, q, r, s, d0, c0, b0, a0);
     xs3_bcd_cond uut1(p, q, r, s, d1, c1, b1, a1);
-    
     
     //  establish connections  
     assign {p, q, r, s} = pqrs;
     assign case_dcba = {d0, c0, b0, a0};
     assign cond_dcba = {d1, c1, b1, a1};
     
-    
-    //  stimulus
+    //  begin stimulus
     initial begin
+        $display("\n\nStart of Stimulus\n\n");
         $monitor("PQRS = %b\n", pqrs);
+        
         for(int i = 4'b0000; i <= 4'b1111; i++) begin
             pqrs = i[3:0]; #10;
+            
             if (pqrs > 4'b0010 && pqrs < 4'b1101) begin
 //                $display("pqrs = %b, dcba = %b, %b", pqrs - 4'b11, case_dcba, cond_dcba);
 //                $display("%s, %s", (pqrs - 4'b11 == case_dcba) ? "true":"false", (pqrs - 4'b11 == cond_dcba) ? "true":"false");
+
                 assert(case_dcba == pqrs - 2'b11)
-                else $error("Case conversion failed for pqrs = %b", pqrs);
+                else $error("Case:\t\tFailed for PQRS = %b", pqrs);
+                
                 assert(cond_dcba == pqrs - 2'b11)
-                else $error("Conditional conversion failed for pqrs = %b", pqrs);
+                else $error("Conditional:\tFailed for PQRS = %b", pqrs);
+                
+                $display();
             end
         end
+        $display("\nEnd of Stimulus\n\n");
         $finish;
     end
-
 endmodule

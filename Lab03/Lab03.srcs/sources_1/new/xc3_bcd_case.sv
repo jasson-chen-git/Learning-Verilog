@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer:            Jason Chen
 // 
-// Create Date: 08/17/2024 01:20:30 PM
-// Design Name: 
-// Module Name: xc3_bcd_case
+// Create Date:         08/17/2024 01:20:30 PM
+// Design Name:         XS3 Code to Binary Code Converter with Case Statements
+// Module Name:         xc3_bcd_case
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -22,11 +22,10 @@
 
 module xs3_bcd_case(
     input logic     p, q, r, s,     //  inputs generally take on wires
-    output logic    d, c, b, a      //  outputs generally take on regs since they hold their values until changes occur
-    );
+    output logic    d, c, b, a      //  outputs generally take on regs as they 
+    );                              //  hold their values until changes occur
     
-    
-    always @(p, q, r, s) begin
+    always @(p, q, r, s) begin          //  a purely combinational circuit (no clock)
         case({p, q, r, s}) 
             4'h3:{d, c, b, a} = 4'h0;
             4'h4:{d, c, b, a} = 4'h1;
@@ -38,9 +37,7 @@ module xs3_bcd_case(
             4'hA:{d, c, b, a} = 4'h7;
             4'hB:{d, c, b, a} = 4'h8;
             4'hC:{d, c, b, a} = 4'h9;
-            default: {d, c, b, a} = 4'bxxxx;
+            default: {d, c, b, a} = 4'bxxxx;    //  xxxx for testing purposes, not physically possible
         endcase
-    end
-    
-    
+    end 
 endmodule
