@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer:            Jason Chen
 // 
-// Create Date: 09/13/2024 07:06:46 PM
-// Design Name: 
-// Module Name: gray_to_bcd_scalar
+// Create Date:         09/13/2024 07:06:46 PM
+// Design Name:         Gray Code to Binary Code Converter with Scalar IO
+// Module Name:         gray_to_bcd_scalar
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
