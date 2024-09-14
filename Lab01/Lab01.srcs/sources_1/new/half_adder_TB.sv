@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer:            Jason Chen
 // 
-// Create Date: 08/17/2024 11:34:19 AM
-// Design Name: 
-// Module Name: half_adder_TB
+// Create Date:         08/17/2024 11:34:19 AM
+// Design Name:         Half Adder Testbench
+// Module Name:         half_adder_TB
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -22,16 +22,15 @@
 
 module half_adder_TB();     //  testbench has no input or output
 
-    reg     a;      //  reg do not always correspond to physical registers, but data storage element
-    reg     b;      //  ideal for retaining their values until a new value is assigned
-    wire    s, c;   //  treated as physical wires to be read from or assigned to
-    
+    //  create test signals
+    reg     a;                  //  reg do not always correspond to physical registers, but data storage element
+    reg     b;                  //  ideal for retaining their values until a new value is assigned
+    wire    s, c;               //  treated as physical wires to be read from or assigned to
     
     //  instantiate test module(s) and name it
-    half_adder ha_uut(      //  half_adder is the module, ha_uut is the name
-        .a(a), .b(b),       //  ._port_id_(_local_signal_) to specify connection
-        .s(s), .c(c));      //  not required to specify connections when ordered correctly
-    
+    half_adder ha_uut(          //  half_adder is the module, ha_uut is the name
+        .a(a), .b(b),           //  ._port_id_(_local_signal_) to specify connection
+        .s(s), .c(c));          //  not required to specify connections when ordered correctly
     
     //  generate stimulus
     initial begin               //  initial is a non-synthesizable construct and executes once
@@ -48,11 +47,12 @@ module half_adder_TB();     //  testbench has no input or output
     initial $monitor("Applying: a = %b, b = %b\n", a, b); 
     
     //  always blocks are sometimes synthesizable and typically produce a register
+    //  this assertion can be written in the initial block with the stimulus using a for loop
+    //  however, this also achieves the same result
     always @(s, c) begin
         assert (s == a ^ b && c == a & b)           //  assert a true/false statement
 //        $display ("OK!\n");                         //  pass statement, not necessary
                                                     //  fail statement, should always be included for debugging
         else $error("Error with %b\n", {a, b});     //  severity levels are $info, $warning, $error, $fatal    
     end
-    
 endmodule
