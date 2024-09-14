@@ -1,11 +1,13 @@
 This repo serves as a tracker for my Verilog/SystemVerilog progress.
 
-Some of the earlier projects, labeled Lab## (Lab02 not included) are school projects that were originally written in VHDL.
-However, they have been redefined in Verilog/SystemVerilog with my own techniques that I learned throughout the course.
-These early projects may include heavy use of comments to keep records of different coding styles or different approaches to the assignment.
-They also serve as reminders and tutorials to reference later on.
+Some of the earlier projects, labeled as Labs (Lab02 not included) are projects that were originally written in VHDL.
+However, they have been redefined in Verilog/SystemVerilog with techniques that I learned in digital design.
+You may encounter heavy use of comments in some of the earlier labs as they are for my own reference. 
+They also serve to help others understand some of the benefits that Verilog/SystemVerilog have over VHDL.
 
-Each project will aim to utilize as many of the features of Verilog/SystemVerilog to help make learning more effective.
+In each project, I aim to utilize as many new features of Verilog/SystemVerilog to help make learning more effective.
+This is my take on learning Verilog/SystemVerilog and it may not be effective for more experienced programmers.
 
+If you have learned something from this, that's awesome!
 😄😄😄
 Thanks for viewing! 
