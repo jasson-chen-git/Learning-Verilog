@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Lab06.srcs/sources_1/new/control.sv" \
+"../../../../Lab06.srcs/sources_1/new/dual2line_to_1line.sv" \
+"../../../../Lab06.srcs/sources_1/new/route.sv" \
+"../../../../Lab06.srcs/sources_1/new/dual2line_to_1line_TB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
